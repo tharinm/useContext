@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div>
-      <h1>App {username}</h1>
-      <CompoFirst />
+      <h4>App {username}</h4>
+      <CompoFirst username={username} setUsername={setUsername} />
     </div>
   );
 }
