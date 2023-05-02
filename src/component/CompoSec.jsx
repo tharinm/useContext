@@ -1,10 +1,16 @@
+import { useContext } from "react";
 import CompoThird from "./CompoThird";
+import { userAuth } from "../App";
 
-export default function CompoSec({ username, setUsername }) {
+export default function CompoSec() {
+
+  const { username, setUsername } = useContext(userAuth);
+  console.log(username)
+
   return (
     <div>
       <h4>Second Component -{username}</h4>
-      <CompoThird username={username} setUsername={setUsername} />
+      <CompoThird  />
     </div>
   );
 }

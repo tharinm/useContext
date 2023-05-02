@@ -1,11 +1,10 @@
+import CompoSec from "./CompoSec";
 
-import CompoSec from './CompoSec'
-
-export default function CompoFirst({username,setUsername}) {
+export default function CompoFirst() {
   return (
-      <div>
-      <h>First Component -{username}</h>
-      <CompoSec username={username} setUsername={setUsername} />
+    <div>
+      <h4>First Component </h4>
+      <CompoSec />
     </div>
   );
 }

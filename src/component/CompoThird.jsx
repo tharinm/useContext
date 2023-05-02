@@ -1,6 +1,12 @@
-export default function CompoThird({setUsername,username}) {
+import { useContext } from "react";
+import { userAuth } from "../App";
+
+export default function CompoThird() {
   //console.log(setUsername)
-  console.log(username)
+
+
+  const { setUsername, username } = useContext(userAuth)
+    //console.log(username);
   return (
     <div>
       <h4>Third Component</h4>
